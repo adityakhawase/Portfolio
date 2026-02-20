@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adityakhawase.com</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #e0e0e0; background: linear-gradient(135deg, #0c0c0c, #1a1a2e); scroll-behavior: smooth; }
+        nav { position: fixed; top: 0; width: 100%; background: rgba(0,0,0,0.9); z-index: 1000; padding: 1rem 0; }
+        nav ul { list-style: none; display: flex; justify-content: center; }
+        nav li { margin: 0 2rem; }
+        nav a { color: #00ff88; text-decoration: none; font-weight: bold; font-size: 1.1rem; transition: color 0.3s; }
+        nav a:hover { color: #ff00ff; }
+        section { padding: 5rem 2rem; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+        #hero { background: url('https://via.placeholder.com/1920x1080/1a1a2e/00ff88?text=Gaming+Hero') no-repeat center/cover; color: white; }
+        h1 { font-size: 4rem; margin-bottom: 1rem; text-shadow: 0 0 20px #00ff88; }
+        h2 { font-size: 2.5rem; margin-bottom: 2rem; color: #00ff88; }
+        p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 2rem; }
+        .skills-grid, .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; width: 100%; max-width: 1200px; }
+        .skill-item, .project-item { background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 10px; backdrop-filter: blur(10px); transition: transform 0.3s; }
+        .skill-item:hover, .project-item:hover { transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,255,136,0.3); }
+        .project-item img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 1rem; }
+        .btn { display: inline-block; padding: 1rem 2rem; background: linear-gradient(45deg, #00ff88, #ff00ff); color: #000; text-decoration: none; border-radius: 50px; font-weight: bold; transition: all 0.3s; }
+        .btn:hover { transform: scale(1.05); box-shadow: 0 5px 20px rgba(0,255,136,0.5); }
+        footer { background: rgba(0,0,0,0.95); padding: 2rem; text-align: center; }
+        @media (max-width: 768px) { h1 { font-size: 2.5rem; } nav li { margin: 0 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <h1>Aditya Khawase</h1>
+        <p>Gaming Content Creation | Diploma Engineering Student | Chh.Sambhajinagar, Maharashtra</p>
+        <a href="#about" class="btn">Get To Know About Me!</a>
+    </section>
+
+    <section id="about">
+        <h2>Hmm, It's Mee....</h2>
+        <p>Hey! This Is Aditya Khawase, & This Is My Portfolio Till The Present Date, I Have Been Studying Diploma In Artificail Intelligence And Machine Learning, I Have Completed My Primary Education From Agrasen Vidya Mandir, Chh.Sambhajinagar, Maharashtra. Also I Have Been Playing Minecraft A Long Ago Also I Have Been Tried Making Some Minecraft Servers For My Betterment. Though I Also Play Roblox, I Play Some Trending Games Like Hypershot, Grow A Graden, Blox Fruit,  </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <h3>Content Creation</h3>
+                <ul>
+                    <li>YouTube, Minecraft Content Creation.</li>
+                    <li>Daily Streams.</li>
+                    <li>New Everyday.</li>
+                </ul>
+            </div>
+            <div class="skill-item">
+                <h3>Minecraft Server Development</h3>
+                <ul>
+                    <li>Server Setup On Spigot MC And Paper MC</li>
+                    <li>Plugin Editing.</li>
+                    <li>High Game Sensed</li>
+                </ul>
+            </div>
+            <div class="skill-item">
+                <h3>Programming Languages.</h3>
+                <ul>
+                    <li>Learning HTML & CSS.</li>
+                    <li>C Programming.</li>
+                    <li>Basic Linux Operations.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-item">
+                <img src="smp.png">
+                <h3>Minecraft SMP</h3>
+                <p>Built The Minecraft Servers.</p>
+                <a href="mcserverM.html" class="btn">View Server</a>
+            </div>
+            <div class="project-item">
+                <img src="rblx.png">
+                <h3>Roblox Obby Game</h3>
+                <p>Play Roblox For Fun And Sells Roblox In Game Merchendise.</p>
+                <a href="rblxM.html" class="btn">Play Now</a>
+            </div>
+            <div class="project-item">
+                <img src="plg.png">
+                <h3>Programming Languages</h3>
+                <p>Learning Programming Skills Nowadays.</p>
+                <a href="ytM.html" class="btn">View Gallery</a>
+            </div>
+        </div>
+        <a href="https://youtube.com/@knockbackkk" class="btn" style="margin-top: 2rem;">More on YouTube</a>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <p>DM on Discord, Instagram, or email for collabs, server help, or gaming sessions!</p>
+        <p>Email: tadi7206@gmail.com</p> 
+        <p>YouTube: youtube.com/@knockbackkk</p>
+        <p>Instagram: @aditya.pvp / @knockbackkk.exe</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Aditya Khawase. Built with HTML/CSS. Chh. Sambhajinagar, Maharashtra, India.</p>
+    </footer>
+</body>
+</html>
